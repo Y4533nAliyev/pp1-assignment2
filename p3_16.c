@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 int main(){
   double totalAmount;
@@ -9,12 +8,10 @@ int main(){
   double totalTax;
 
   char name[10] = "";
-  bool isActive = true;
-  while(isActive){
+  while(1){
     printf("Enter the total amount collected (-1 to quit): ");
     scanf("%lf", &totalAmount);
     if(totalAmount == -1){
-      isActive = false;
       break;
     }
     printf("Enter the name of the month: ");
