@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 int main(){
   int accountNumber;
@@ -8,7 +7,7 @@ int main(){
   double interestRate;
   double totalInterest;
   int MPI;
-  while(true){
+  while(1){
     printf("Enter Account Number (-1 to exit): ");
     scanf("%d", &accountNumber);
     if(accountNumber == -1){
@@ -27,6 +26,7 @@ int main(){
 
     MPI = (totalInterest + mortgageAmount) / (mortgageTerm * 12);
     printf("The monthly payable interest $%d\n", MPI);
+    printf("\n");
   }
   return 0;
 }

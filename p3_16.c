@@ -26,6 +26,7 @@ int main(){
     printf("County Sales Tax: %.2lf\n", countyTax);
     printf("State Sales Tax: %.2lf\n", stateTax);
     printf("Total Sales Tax Collected: %.2lf\n", totalTax);
+    printf("\n");
   }
     return 0;
 }
