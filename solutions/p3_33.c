@@ -6,8 +6,16 @@ int main(){
   scanf("%d", &num);
 
   for(int i = 0; i < num; i++){
-    for(int i = 0; i < num; i++){
-      printf("%s", "*");
+    for(int j = 0; j < num; j++){
+      if(i == 0 || i == num-1){
+        printf("%s", "*");
+      }else{
+        if(j == 0 || j == num-1){
+          printf("%s", "*");
+        }else{
+          printf("%s", " ");
+        }
+      }
     }
     printf("\n");
   }
