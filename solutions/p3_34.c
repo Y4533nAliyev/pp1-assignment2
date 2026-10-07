@@ -1,14 +1,19 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(){
+    int a , heh = 0 ;
+    scanf("%d" , &a );
+    for(int i = 0 ; i < a ; i++){ 
 
-  int num = 1;
-  for(int i = 1; i <= 10; i++){
-    for(int j = 1; j <= i; j++){
-      printf("%d\t", num);
-      num++;
+        for (int j = 0 ; j < i + 1 ; j++ ){ 
+            heh++;
+            printf("%d\t" , heh ); 
+
+        }
+        printf("%s" , "\n" ); 
+
     }
-    printf("\n");
-    return 0;
-  }
+    
+
 }

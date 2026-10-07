@@ -1,17 +1,25 @@
 #include <stdio.h>
 
-int main(){
-  int a = 0;
-  int b = 0;
-  int c = 0;
+int main(void){
+    double a;
+    double b;
+    double c;
+    printf("Enter a non-zero number: ");
+    scanf("%lf",&a);
+    printf("Enter a non-zero number: ");
+    scanf("%lf",&b);
+    printf("Enter a non-zero number: ");
+    scanf("%lf",&c);
 
-  printf("Enter the sides of the triangle: ");
-  scanf("%d %d %d", &a, &b, &c);
-
-  if(a * a + b * b == c * c || b * b + c * c == a * a || a * a + c * c == b * b){
-    printf("The numbers can represent a right-sided triangle\n");
-  } else{
-    printf("The numbers cannot represent a right-sided triangle\n");
-  }
-  return 0;
+    if(a*a +b*b == c*c){
+        printf("%.2lf, %.2lf,%.2lf could be sizes of a right triangle",a,b,c);
+    }
+    else if(c*c +b*b == a*a){
+        printf("%.2lf, %.2lf,%.2lf could be sizes of a right triangle",a,b,c);
+    }
+    else if(a*a +c*c == b*b){
+        printf("%.2lf, %.2lf,%.2lf could be sizes of a right triangle",a,b,c);
+    } else{
+        printf("%.2lf, %.2lf,%.2lf could not be sizes of a right triangle",a,b,c);
+    }
 }
